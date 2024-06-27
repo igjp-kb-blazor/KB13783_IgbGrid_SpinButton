@@ -1,0 +1,19 @@
+﻿/* 以下は、Google Chrome、Microsoft Edge など Chromium 系ブラウザ用の設定です */
+::deep input[type="number"]::-webkit-outer-spin-button,
+::deep input[type="number"]::-webkit-inner-spin-button {
+    /* 下記 appearance の上書き設定によって、スピンボタンの表示が復活します */
+    -webkit-appearance: auto;
+    appearance: auto;
+    /* 下記は Chromium 系ブラウザでのみ有効な、スピンボタンの表示のカスタマイズ例です */
+    transform: scale(1.2);
+    position: absolute;
+    inset: 11px;
+    left: unset;
+}
+
+/* 以下は、Firefox ブラウザ用の設定です*/
+/* ※ Firefox ではスピンボタンの見た目は調整できません*/
+/*::deep input[type="number"] {
+    -moz-appearance: auto;
+    appearance: auto;
+}*/
